@@ -43,7 +43,6 @@ The server receives an image file from the user, uploads it to Cloudinary, and t
 
 ```bash
 git clone https://github.com/arifrahmanrafee/Cloudinary-image-upload-NodeJS.git
-cd cloud-image-uploader
 ```
 
 ## Install dependencies
