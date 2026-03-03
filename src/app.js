@@ -20,8 +20,10 @@ const upload = multer({ storage: storage });
  */
 app.post('/upload', upload.single('image'), function (req, res) {
   cloudinary.uploader.upload(req.file.path, function (err, result) {
+    // console.log(result.url);
     if (err) {
       console.log(err);
+    
       return res.status(500).json({
         success: false,
         message: 'error',
